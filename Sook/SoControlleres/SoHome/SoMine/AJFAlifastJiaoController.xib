@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AJFAlifastJiaoController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MI-Wo-os4">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHb-4b-953">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="a2e-h7-acY"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="freeUserRobotlogo"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="ddM-ht-zvJ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于我们" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqH-Jv-2Ie">
+                            <rect key="frame" x="162" y="11.666666666666671" width="69.333333333333314" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UHb-4b-953" firstAttribute="top" secondItem="2MI-Wo-os4" secondAttribute="top" id="LeG-DN-Wgd"/>
+                        <constraint firstItem="DqH-Jv-2Ie" firstAttribute="centerX" secondItem="2MI-Wo-os4" secondAttribute="centerX" id="eP2-A4-LoH"/>
+                        <constraint firstAttribute="bottom" secondItem="UHb-4b-953" secondAttribute="bottom" id="fNA-zQ-ipZ"/>
+                        <constraint firstItem="UHb-4b-953" firstAttribute="leading" secondItem="2MI-Wo-os4" secondAttribute="leading" id="jkA-qM-fJ0"/>
+                        <constraint firstItem="DqH-Jv-2Ie" firstAttribute="centerY" secondItem="2MI-Wo-os4" secondAttribute="centerY" id="mDJ-J2-6yF"/>
+                        <constraint firstAttribute="height" constant="44" id="wrh-9e-slZ"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete__xHistory" translatesAutoresizingMaskIntoConstraints="NO" id="feO-lN-DWc">
+                    <rect key="frame" x="155.66666666666666" y="327" width="82" height="88"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPe-9l-Uiy">
+                    <rect key="frame" x="164" y="443" width="65" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2MI-Wo-os4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4GC-6I-akd"/>
+                <constraint firstItem="feO-lN-DWc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9cT-J3-cCn"/>
+                <constraint firstItem="wPe-9l-Uiy" firstAttribute="centerX" secondItem="feO-lN-DWc" secondAttribute="centerX" id="A7N-hN-sTG"/>
+                <constraint firstItem="2MI-Wo-os4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BNg-2v-Lba"/>
+                <constraint firstItem="feO-lN-DWc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-55" id="FxF-X1-8Rg"/>
+                <constraint firstAttribute="trailing" secondItem="2MI-Wo-os4" secondAttribute="trailing" id="gmx-NX-EfJ"/>
+                <constraint firstItem="wPe-9l-Uiy" firstAttribute="top" secondItem="feO-lN-DWc" secondAttribute="bottom" constant="28" id="pWF-5Z-g9x"/>
+            </constraints>
+            <point key="canvasLocation" x="83" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete__xHistory" width="82" height="88"/>
+        <image name="freeUserRobotlogo" width="10" height="17"/>
+    </resources>
+</document>
