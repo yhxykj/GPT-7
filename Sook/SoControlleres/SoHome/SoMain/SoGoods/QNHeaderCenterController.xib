@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KMCardController" customModule="Sook" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gundongAyment" translatesAutoresizingMaskIntoConstraints="NO" id="1Ud-oq-3vH">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zc-vL-tGp">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="loginbgChat"/>
+                    <connections>
+                        <action selector="_backAction:" destination="-1" eventType="touchUpInside" id="FgN-hv-M0Z"/>
+                        <action selector="_nextClick" destination="-1" eventType="touchUpInside" id="RRn-qJ-0gc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b30-bG-0KV">
+                    <rect key="frame" x="0.0" y="59" width="65" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="4OX-sw-hpe"/>
+                        <constraint firstAttribute="height" constant="44" id="OwK-IT-WED"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ringLijiWelcome"/>
+                    <connections>
+                        <action selector="kjsdhfnds:" destination="-1" eventType="touchUpInside" id="Vwn-1A-68w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Zc-vL-tGp" secondAttribute="trailing" constant="46" id="Cvb-g5-Uxu"/>
+                <constraint firstItem="b30-bG-0KV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DgD-vc-Z1d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1Ud-oq-3vH" secondAttribute="trailing" id="MeN-f7-PRa"/>
+                <constraint firstAttribute="bottom" secondItem="1Ud-oq-3vH" secondAttribute="bottom" id="UrR-ui-Drr"/>
+                <constraint firstItem="1Ud-oq-3vH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XHG-uy-mWl"/>
+                <constraint firstItem="5Zc-vL-tGp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="hL3-LG-F84"/>
+                <constraint firstItem="1Ud-oq-3vH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hg6-t3-3h5"/>
+                <constraint firstItem="b30-bG-0KV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lnQ-xD-Ruc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5Zc-vL-tGp" secondAttribute="bottom" constant="20" id="w5I-a0-Xw7"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gundongAyment" width="390" height="844"/>
+        <image name="loginbgChat" width="298" height="54"/>
+        <image name="ringLijiWelcome" width="34" height="34"/>
+    </resources>
+</document>

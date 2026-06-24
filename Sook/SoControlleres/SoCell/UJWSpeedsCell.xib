@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="KGk-i7-Jjw" customClass="UJWSpeedsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainCollectionGraphics" translatesAutoresizingMaskIntoConstraints="NO" id="rUz-hw-0VF">
+                        <rect key="frame" x="16" y="21" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="01t-Cu-bmb"/>
+                            <constraint firstAttribute="width" constant="28" id="dsm-el-34V"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kdz-4V-x5m">
+                        <rect key="frame" x="56" y="12" width="275" height="187"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您的免费3条消息已用完，请解锁VIP无限聊天" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-be-BWi">
+                                <rect key="frame" x="19" y="19.999999999999996" width="236" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-fD-yDR">
+                                <rect key="frame" x="19" y="74" width="237" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="eveantApplogo"/>
+                                <connections>
+                                    <action selector="_enterElevtClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lev-fu-6dC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cY-V2-6bi">
+                                <rect key="frame" x="19" y="128" width="237" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="aboutYbackScreen"/>
+                                <connections>
+                                    <action selector="_freeNumberClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Sir-kk-Yge"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4cY-V2-6bi" secondAttribute="trailing" constant="19" id="5a9-Ih-GOn"/>
+                            <constraint firstAttribute="bottom" secondItem="4cY-V2-6bi" secondAttribute="bottom" constant="17" id="9BN-iW-3vg"/>
+                            <constraint firstItem="J5s-fD-yDR" firstAttribute="leading" secondItem="Kdz-4V-x5m" secondAttribute="leading" constant="19" id="HDa-oW-bGJ"/>
+                            <constraint firstAttribute="trailing" secondItem="J5s-fD-yDR" secondAttribute="trailing" constant="19" id="L0G-V2-pEX"/>
+                            <constraint firstAttribute="height" constant="187" id="LSc-aX-lLW"/>
+                            <constraint firstAttribute="trailing" secondItem="HRy-be-BWi" secondAttribute="trailing" constant="20" id="ZRO-mN-4Dq"/>
+                            <constraint firstItem="HRy-be-BWi" firstAttribute="leading" secondItem="Kdz-4V-x5m" secondAttribute="leading" constant="19" id="hTf-Hi-lAy"/>
+                            <constraint firstItem="HRy-be-BWi" firstAttribute="top" secondItem="Kdz-4V-x5m" secondAttribute="top" constant="20" id="rnX-jP-NSg"/>
+                            <constraint firstAttribute="bottom" secondItem="J5s-fD-yDR" secondAttribute="bottom" constant="71" id="uO7-wZ-1Cr"/>
+                            <constraint firstItem="4cY-V2-6bi" firstAttribute="leading" secondItem="Kdz-4V-x5m" secondAttribute="leading" constant="19" id="wQ5-R9-eBs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kdz-4V-x5m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="2FQ-lS-m09"/>
+                    <constraint firstAttribute="bottom" secondItem="Kdz-4V-x5m" secondAttribute="bottom" constant="12" id="3mr-Su-acc"/>
+                    <constraint firstItem="Kdz-4V-x5m" firstAttribute="leading" secondItem="rUz-hw-0VF" secondAttribute="trailing" constant="12" id="8fY-at-lNO"/>
+                    <constraint firstItem="rUz-hw-0VF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="NXh-Lz-CHV"/>
+                    <constraint firstItem="rUz-hw-0VF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="aRC-x6-yCf"/>
+                    <constraint firstAttribute="trailing" secondItem="Kdz-4V-x5m" secondAttribute="trailing" constant="44" id="lVl-UW-QEf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="HRy-be-BWi" id="n7l-Zr-cGH"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="aboutYbackScreen" width="251" height="42"/>
+        <image name="eveantApplogo" width="251" height="42"/>
+        <image name="mainCollectionGraphics" width="28" height="28"/>
+    </resources>
+</document>
